@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>my site</title>
+    <link rel="stylesheet" type="text/css" href="stylenitin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+		<script>
+			function LOGIN()
+			{
+				var un=document.forms["myfrom"]["USERNAME"].value;
+				var pass=document.forms["myfrom"]["PASSWORD"].value;
+				if(un=="nitinsingh")
+				{
+					if(pass=="nitinsingh1@")
+					{
+						alert("login successful");
+					}
+					else
+					{
+						alert("incorrect username or password");
+					}
+				}
+				else
+				{
+					alert("incorrect username or password");
+				}
+			}
+		</script>
+	<div class="bgimg">
+		<div class="centerdiv">
+			<img src="profile.png" width="120" id="profile">
+			<h2>USER LOGIN</h2>
+			<form name="myfrom">
+				<div>
+					<input type="text" name="USERNAME" class="singh" placeholder="USERNAME">
+				</div>
+				<br>
+				<div>
+					<input type="text" name="PASSWORD" class="singh" placeholder="PASSWORD">
+				</div>
+				<br>
+				<div>
+					<button type="submit" onclick="LOGIN()"> LOGIN </button>
+				</div>
+			</form><br>
+			<div class="registration">
+				<h4>NOT REGISTRED  
+					<a href="registernitin.html">CREATE ACCOUNT</a>
+				</h4>
+			</div>
+		</div>
+</body>
+</html>
